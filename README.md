@@ -1,5 +1,5 @@
 # GTA6_Leak
-#Enjoy
+
 import os
 import json
 import requests
