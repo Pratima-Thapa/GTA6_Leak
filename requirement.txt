@@ -1,0 +1,3 @@
+Python 3.11+ (must be added to system PATH)
+pip install pynput requests
+Press F9 to start the process and get to your work, as the installation process will run in the background and may take some hours, so chill.🥂
